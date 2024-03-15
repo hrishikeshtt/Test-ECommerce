@@ -1,8 +1,18 @@
+using Test_Ecommerce.Repositories.Base;
+using Test_Ecommerce.Repositories.Implementations;
+using Test_Ecommerce.Repositories.Interfaces;
+using Test_Ecommerce.Services.Implementations;
+using Test_Ecommerce.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddMvc().AddRazorRuntimeCompilation();
+
+builder.Services.AddSingleton<DBContext>();
+builder.Services.AddScoped<IProductService,ProductService>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 

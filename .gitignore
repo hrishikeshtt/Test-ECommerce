@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Test Ecommerce/Test Ecommerce/bin/Debug/net6.0
+/.vs/Test-ECommerce/v17
+/Test Ecommerce/.vs/Test Ecommerce
+/Test Ecommerce/Test Ecommerce/obj
+/Test Ecommerce/Test Ecommerce/Test Ecommerce.csproj.user
