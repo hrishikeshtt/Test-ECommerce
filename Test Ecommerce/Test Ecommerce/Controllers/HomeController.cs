@@ -39,5 +39,44 @@ namespace Test_Ecommerce.Controllers
             }
                 
         }
+
+        public IActionResult Products()
+        {
+            List<Product> products = new List<Product>
+            {
+                new Product
+                {
+                    Category = "Clothes",
+                    Description = "T shirt",
+                    Name ="Lavis",
+                    Price = 2000,
+                    Rating = 5,
+                    Stock = 10,
+                    Weight = 10
+                },
+                new Product
+                {
+                    Category = "Watches",
+                    Description = "Great watch",
+                    Name ="Rolex 123",
+                    Price = 2000,
+                    Rating = 5,
+                    Stock = 10,
+                    Weight = 10
+                },
+                new Product
+                {
+                    Category = "Laptops",
+                    Description = "Good working laptop",
+                    Name ="HP Elitebook",
+                    Price = 2000000,
+                    Rating = 5,
+                    Stock = 10,
+                    Weight = 10
+                }
+            };
+            return View(products);
+
+        }
     }
 }

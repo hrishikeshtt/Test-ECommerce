@@ -19,7 +19,7 @@ namespace Test_Ecommerce.Repositories.Implementations
         {
             using (var connection = _dbContext.CreateConnection())
             {
-                var sql = "INSERT INTO Products (Name, Email) VALUES (@Name, @Email)";                
+                var sql = "INSERT INTO Products (Name, Email) VALUES (@Name, @Categroy,@Price)";                
                 var rowsAffected = await connection.ExecuteAsync(sql, product);
             }
         }
