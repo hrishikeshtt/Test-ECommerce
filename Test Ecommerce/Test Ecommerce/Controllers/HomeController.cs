@@ -73,6 +73,16 @@ namespace Test_Ecommerce.Controllers
                     Rating = 5,
                     Stock = 10,
                     Weight = 10
+                },
+                new Product
+                {
+                    Category = "LaptopsOne",
+                    Description = "Good working laptops",
+                    Name ="HP Elitebooker",
+                    Price = 20000090,
+                    Rating = 4,
+                    Stock = 100,
+                    Weight = 156
                 }
             };
             return View(products);
