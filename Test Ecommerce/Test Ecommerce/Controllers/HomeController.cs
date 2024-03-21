@@ -74,6 +74,7 @@ namespace Test_Ecommerce.Controllers
                     Stock = 10,
                     Weight = 10
                 },
+
                 new Product
                 {
                     Category = "Laptops",
@@ -83,6 +84,17 @@ namespace Test_Ecommerce.Controllers
                     Rating = 5,
                     Stock = 15,
                     Weight = 20
+
+                 new Product
+                {
+                    Category = "Wired Earphones",
+                    Description = "Good working earphones",
+                    Name ="Boat 100",
+                    Price = 400,
+                    Rating = 5,
+                    Stock = 100,
+                    Weight = 11
+
                 }
             };
             return View(products);
