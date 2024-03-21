@@ -84,6 +84,7 @@ namespace Test_Ecommerce.Controllers
                     Rating = 5,
                     Stock = 15,
                     Weight = 20
+                },
 
                  new Product
                 {
