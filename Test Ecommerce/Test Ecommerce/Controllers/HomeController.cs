@@ -74,6 +74,17 @@ namespace Test_Ecommerce.Controllers
                     Stock = 10,
                     Weight = 10
                 },
+
+                new Product
+                {
+                    Category = "Laptops",
+                    Description = "i5 laptop",
+                    Name ="HP Elitebook",
+                    Price = 1000000,
+                    Rating = 5,
+                    Stock = 15,
+                    Weight = 20
+
                  new Product
                 {
                     Category = "Wired Earphones",
@@ -83,6 +94,7 @@ namespace Test_Ecommerce.Controllers
                     Rating = 5,
                     Stock = 100,
                     Weight = 11
+
                 }
             };
             return View(products);
