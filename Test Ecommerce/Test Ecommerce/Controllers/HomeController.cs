@@ -74,15 +74,15 @@ namespace Test_Ecommerce.Controllers
                     Stock = 10,
                     Weight = 10
                 },
-                new Product
+                 new Product
                 {
-                    Category = "LaptopsOne",
-                    Description = "Good working laptops",
-                    Name ="HP Elitebooker",
-                    Price = 20000090,
-                    Rating = 4,
+                    Category = "Wired Earphones",
+                    Description = "Good working earphones",
+                    Name ="Boat 100",
+                    Price = 400,
+                    Rating = 5,
                     Stock = 100,
-                    Weight = 156
+                    Weight = 11
                 }
             };
             return View(products);
